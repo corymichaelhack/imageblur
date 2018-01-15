@@ -1,12 +1,16 @@
 class Image
+  
+  def initialize(images)
+    @images = images
+  end
 
   def output_image
     @images.each do |x|
-  puts x
+      puts x.join
+    end
   end
 
 end
-
 
 image = Image.new([
   [0, 0, 0, 0],
